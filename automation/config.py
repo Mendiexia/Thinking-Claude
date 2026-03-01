@@ -1,5 +1,8 @@
 """Configuration for GPTINF automation."""
 
+import os
+import platform
+
 # GPTINF website URL
 GPTINF_URL = "https://www.gptinf.com/"
 
@@ -7,6 +10,24 @@ GPTINF_URL = "https://www.gptinf.com/"
 HEADLESS = False  # Set True to run without visible browser
 SLOW_MO = 100  # Milliseconds between actions (helps avoid detection)
 TIMEOUT = 60000  # Max wait time for elements in milliseconds
+
+# Chrome user data directory — so the automation reuses your logged-in session.
+# Set this to your Chrome profile path. The defaults below cover the most common
+# locations per OS. Override with the --profile CLI flag or by editing this value.
+_system = platform.system()
+if _system == "Windows":
+    _default_profile = os.path.join(
+        os.environ.get("LOCALAPPDATA", ""),
+        "Google", "Chrome", "User Data",
+    )
+elif _system == "Darwin":  # macOS
+    _default_profile = os.path.expanduser(
+        "~/Library/Application Support/Google/Chrome",
+    )
+else:  # Linux
+    _default_profile = os.path.expanduser("~/.config/google-chrome")
+
+CHROME_USER_DATA_DIR = _default_profile
 
 # Selectors for GPTINF interface (update if site changes)
 SELECTORS = {

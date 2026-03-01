@@ -19,7 +19,7 @@ from gptinf_processor import GptinfProcessor
 from quality_checker import check_quality, format_report
 
 
-def process_batch(files, output_dir, headless=False, slow_mo=100, delay=5):
+def process_batch(files, output_dir, headless=False, slow_mo=100, delay=5, profile_dir=None):
     """Process a batch of text files through GPTINF.
 
     Args:
@@ -28,10 +28,11 @@ def process_batch(files, output_dir, headless=False, slow_mo=100, delay=5):
         headless: Run browser in headless mode.
         slow_mo: Delay between browser actions in ms.
         delay: Seconds to wait between processing each file.
+        profile_dir: Chrome user data directory (to reuse login session).
     """
     os.makedirs(output_dir, exist_ok=True)
 
-    processor = GptinfProcessor(headless=headless, slow_mo=slow_mo)
+    processor = GptinfProcessor(headless=headless, slow_mo=slow_mo, profile_dir=profile_dir)
     results = []
 
     try:
@@ -145,6 +146,10 @@ def main():
         default=5,
         help="Seconds to wait between files (default: 5)",
     )
+    parser.add_argument(
+        "--profile",
+        help="Path to Chrome user data directory (to reuse your login session)",
+    )
 
     args = parser.parse_args()
 
@@ -172,6 +177,7 @@ def main():
         headless=args.headless,
         slow_mo=args.slow_mo,
         delay=args.delay,
+        profile_dir=args.profile,
     )
 
 

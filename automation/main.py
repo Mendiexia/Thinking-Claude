@@ -2,7 +2,7 @@
 """GPTINF Automation - Process text and check output quality.
 
 Usage:
-    # Process text from a file:
+    # Process text from a file (uses your logged-in Chrome profile):
     python main.py --file input.txt
 
     # Process text directly:
@@ -10,6 +10,9 @@ Usage:
 
     # Process and save output:
     python main.py --file input.txt --output result.txt
+
+    # Use a specific Chrome profile path:
+    python main.py --file input.txt --profile "/path/to/Chrome/User Data"
 
     # Run in headless mode:
     python main.py --file input.txt --headless
@@ -61,9 +64,11 @@ def run_full_pipeline(args):
     original = read_input(args)
 
     print("\n[1/3] Starting browser automation...")
+    print("  NOTE: Make sure Chrome is closed so the automation can use your profile.")
     processor = GptinfProcessor(
         headless=args.headless,
         slow_mo=args.slow_mo,
+        profile_dir=getattr(args, "profile", None),
     )
 
     try:
@@ -145,6 +150,10 @@ def main():
     parser.add_argument(
         "--output-text",
         help="Pre-processed output text (used with --quality-only)",
+    )
+    parser.add_argument(
+        "--profile",
+        help="Path to Chrome user data directory (to reuse your login session)",
     )
 
     args = parser.parse_args()

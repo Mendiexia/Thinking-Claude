@@ -1,52 +1,59 @@
 """Browser automation for GPTINF text processing.
 
 Uses Playwright to automate the GPTINF web interface:
-1. Navigate to gptinf.com
-2. Input text into the editor
-3. Click the process/humanize button
-4. Wait for and extract the output
+1. Launch Chrome using your existing profile (keeps your GPTINF login)
+2. Navigate to gptinf.com
+3. Input text into the editor
+4. Click the process/humanize button
+5. Wait for and extract the output
+
+IMPORTANT: Close Chrome before running so Playwright can use your profile.
 """
 
-import time
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
-from config import GPTINF_URL, HEADLESS, SLOW_MO, TIMEOUT, SELECTORS
+from config import GPTINF_URL, HEADLESS, SLOW_MO, TIMEOUT, SELECTORS, CHROME_USER_DATA_DIR
 
 
 class GptinfProcessor:
     """Automates text processing through the GPTINF web interface."""
 
-    def __init__(self, headless=None, slow_mo=None):
+    def __init__(self, headless=None, slow_mo=None, profile_dir=None):
         self.headless = headless if headless is not None else HEADLESS
         self.slow_mo = slow_mo if slow_mo is not None else SLOW_MO
-        self.browser = None
+        self.profile_dir = profile_dir or CHROME_USER_DATA_DIR
+        self.context = None
         self.page = None
         self.playwright = None
 
     def start(self):
-        """Launch browser and navigate to GPTINF."""
+        """Launch Chrome with your existing profile to keep your GPTINF login.
+
+        Uses launch_persistent_context so cookies/sessions carry over.
+        Make sure Chrome is closed before running this.
+        """
         self.playwright = sync_playwright().start()
-        self.browser = self.playwright.chromium.launch(
+
+        print(f"  Using Chrome profile: {self.profile_dir}")
+        print("  (Make sure Chrome is closed before running!)")
+
+        self.context = self.playwright.chromium.launch_persistent_context(
+            user_data_dir=self.profile_dir,
             headless=self.headless,
             slow_mo=self.slow_mo,
-        )
-        context = self.browser.new_context(
             viewport={"width": 1280, "height": 800},
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/120.0.0.0 Safari/537.36"
-            ),
+            channel="chrome",  # Use your installed Chrome, not bundled Chromium
         )
-        self.page = context.new_page()
+        # Persistent context opens with one page by default
+        self.page = self.context.pages[0] if self.context.pages else self.context.new_page()
         self.page.set_default_timeout(TIMEOUT)
 
     def stop(self):
         """Close browser and clean up."""
-        if self.browser:
-            self.browser.close()
+        if self.context:
+            self.context.close()
         if self.playwright:
             self.playwright.stop()
-        self.browser = None
+        self.context = None
         self.page = None
         self.playwright = None
 
