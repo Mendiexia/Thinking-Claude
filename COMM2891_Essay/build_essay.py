@@ -136,6 +136,8 @@ def build(out_path):
     sec.page_width, sec.page_height = Mm(210), Mm(297)
     for side in ("top_margin", "bottom_margin", "left_margin", "right_margin"):
         setattr(sec, side, Inches(1))
+    # No page number on the title page; numbering shows from the essay's first page.
+    sec.different_first_page_header_footer = True
     add_page_number_footer(sec)
 
     # ---- Title page ----
@@ -145,7 +147,7 @@ def build(out_path):
     fmt(p, align=WD_ALIGN_PARAGRAPH.CENTER)
     set_run_font(p.add_run(C.TITLE), bold=True)
     fmt(doc.add_paragraph())
-    for line in C.TITLE_PAGE_LINES:
+    for line in C.TITLE_PAGE_LINES + ["", f"Word count: {body_word_count():,}"]:
         p = doc.add_paragraph()
         fmt(p, align=WD_ALIGN_PARAGRAPH.CENTER)
         set_run_font(p.add_run(line))
