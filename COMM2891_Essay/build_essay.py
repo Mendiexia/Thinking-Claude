@@ -7,6 +7,7 @@ throughout, first-line indent on every body paragraph, page numbers, default
 Content lives in essay_content.py so text can be swapped without touching
 the formatting code. Usage: python3 build_essay.py [output_name.docx]
 """
+import datetime
 import re
 import sys
 
@@ -121,6 +122,15 @@ def build(out_path):
         hs.paragraph_format.space_before = Pt(0)
         hs.paragraph_format.space_after = Pt(0)
         hs.paragraph_format.line_spacing = 2.0
+        rpr = hs.element.get_or_add_rPr()
+        rfonts = rpr.find(qn("w:rFonts"))
+        if rfonts is None:
+            rfonts = OxmlElement("w:rFonts")
+            rpr.append(rfonts)
+        for attr in ("w:ascii", "w:hAnsi", "w:eastAsia", "w:cs"):
+            rfonts.set(qn(attr), FONT)
+        for attr in ("w:asciiTheme", "w:hAnsiTheme", "w:eastAsiaTheme", "w:cstheme"):
+            rfonts.attrib.pop(qn(attr), None)
 
     sec = doc.sections[0]
     sec.page_width, sec.page_height = Mm(210), Mm(297)
@@ -139,11 +149,11 @@ def build(out_path):
         p = doc.add_paragraph()
         fmt(p, align=WD_ALIGN_PARAGRAPH.CENTER)
         set_run_font(p.add_run(line))
-    doc.paragraphs[-1].runs[-1].add_break(WD_BREAK.PAGE)
 
     # ---- Essay body ----
     p = doc.add_paragraph()
     fmt(p, align=WD_ALIGN_PARAGRAPH.CENTER)
+    p.paragraph_format.page_break_before = True
     set_run_font(p.add_run(C.TITLE), bold=True)
     for heading, paras in C.SECTIONS:
         if heading and heading != "Introduction":  # APA 7: the paper title heads the introduction
@@ -155,22 +165,26 @@ def build(out_path):
     body = body_word_count()
     p = doc.add_paragraph()
     fmt(p)
-    p.paragraph_format.space_before = Pt(12)
     set_run_font(
         p.add_run(f"Word count: {body:,} (excluding title page, headings and reference list)"),
         bold=True,
     )
 
     # ---- References ----
-    p = doc.add_paragraph()
-    p.add_run().add_break(WD_BREAK.PAGE)
-    fmt(p)
-    add_heading(doc, "References", level=1, center=True)
+    h = add_heading(doc, "References", level=1, center=True)
+    h.paragraph_format.page_break_before = True
     for ref in sorted(C.REFERENCES, key=lambda r: r.replace("*", "").lower()):
         p = doc.add_paragraph()
         fmt(p, hanging=Inches(0.5))
         add_rich_text(p, ref)
 
+    cp = doc.core_properties
+    cp.title = C.TITLE
+    cp.subject = "COMM2891 Asian Media and Communication"
+    cp.author = cp.last_modified_by = ""
+    cp.comments = ""
+    cp.keywords = ""
+    cp.created = cp.modified = datetime.datetime.now()
     doc.save(out_path)
     return body
 
