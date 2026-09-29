@@ -100,7 +100,7 @@ def body_word_count():
 
 
 def heading_word_count():
-    return sum(count_words(h) for h, _ in C.SECTIONS if h)
+    return sum(count_words(h) for h, _ in C.SECTIONS if h and h != "Introduction")
 
 
 def build(out_path):
@@ -146,8 +146,8 @@ def build(out_path):
     fmt(p, align=WD_ALIGN_PARAGRAPH.CENTER)
     set_run_font(p.add_run(C.TITLE), bold=True)
     for heading, paras in C.SECTIONS:
-        if heading:
-            add_heading(doc, heading, level=1)
+        if heading and heading != "Introduction":  # APA 7: the paper title heads the introduction
+            add_heading(doc, heading, level=1, center=True)
         for t in paras:
             add_body(doc, t)
 
