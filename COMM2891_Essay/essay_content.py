@@ -19,177 +19,49 @@ TITLE_PAGE_LINES = [
 
 SECTIONS = [
     ("Introduction", [
-        "On 24 August 2023, the operator of the wrecked Fukushima Daiichi nuclear plant began releasing "
-        "treated water into the Pacific, and within hours China banned all Japanese aquatic products (Hall & "
-        "Zhang, 2023). The International Atomic Energy Agency (IAEA) had judged the plan consistent with "
-        "international safety standards and its radiological impact negligible (International Atomic Energy "
-        "Agency, 2023), yet even the water’s name was contested. Japanese officials insisted on *treated "
-        "water* (*shorisui*) and condemned *contaminated* as a gaffe (“Fisheries Minister Under Fire,” 2023). "
-        "China’s Foreign Ministry spoke of *nuclear-contaminated water* (Ministry of Foreign Affairs of the "
-        "People’s Republic of China, 2023). South Korea’s ruling party moved to rename the widely used "
-        "*contaminated water* as *treated contaminated water* (“PPP Decides to Refer,” 2023).",
+        "On 24 August 2023, the operator of the wrecked Fukushima Daiichi nuclear plant began releasing treated water into the Pacific, and within hours China banned all Japanese aquatic products (Hall & Zhang, 2023). The International Atomic Energy Agency (IAEA) had judged the plan consistent with international safety standards and its radiological impact negligible (International Atomic Energy Agency, 2023), yet even the water’s name was contested. Japanese officials insisted on *treated water* (*shorisui*) and condemned *contaminated* as a gaffe (“Fisheries Minister Under Fire,” 2023). China’s Foreign Ministry spoke of *nuclear-contaminated water* (Ministry of Foreign Affairs of the People’s Republic of China, 2023). South Korea’s ruling party moved to rename the widely used *contaminated water* as *treated contaminated water* (“PPP Decides to Refer,” 2023).",
 
-        "This essay compares coverage in Japan with coverage in China and South Korea, the neighbours that "
-        "reacted most strongly and whose media systems contrast most sharply with Japan’s. It covers the "
-        "period from Japan’s April 2021 decision to the September 2024 China–Japan monitoring agreement. It "
-        "argues that all three media spheres nationalised the issue, largely because journalists domesticated "
-        "a transboundary risk for home audiences. The direction of that nationalisation, however, depended on "
-        "state–media relations, political parallelism, geopolitics and platform governance. Evidence on "
-        "emerging media is uneven, strongest for China and thinnest for South Korea, so claims about "
-        "platforms are made cautiously.",
+        "This essay compares coverage in Japan with coverage in China and South Korea, the neighbours that reacted most strongly and whose media systems contrast most sharply with Japan’s. It runs from Japan’s April 2021 decision to the September 2024 China–Japan monitoring agreement. It argues that all three media spheres applied a national-interest frame, largely because journalists domesticated a transboundary risk for home audiences. The direction of that frame, however, depended on state–media relations, political parallelism, geopolitics and platform governance. Evidence on emerging media is uneven, strongest for China and thinnest for South Korea, so claims about platforms are made cautiously.",
     ]),
     ("Key Concepts and Evidence", [
-        "Framing means to “select some aspects of a perceived reality and make them more salient in a "
-        "communicating text” so as to promote a problem definition, causal interpretation, moral evaluation "
-        "and remedy (Entman, 1993, p. 52). This essay reads frames through three indicators: the label given "
-        "to the water, the actor held responsible and the remedy proposed. A national-interest frame is "
-        "defined narrowly as coverage that judges the release chiefly by its consequences for the reporting "
-        "nation, whether for citizens’ health, fisheries and trade, or reputation, rather than by radiological "
-        "evidence. Such a frame can be reassuring or alarmed. Domestication is the newsroom process of making "
-        "foreign events meaningful by relating them to national concerns (Clausen, 2004).",
+        "Framing means to “select some aspects of a perceived reality and make them more salient in a communicating text” so as to promote a problem definition, causal interpretation, moral evaluation and remedy (Entman, 1993, p. 52). This essay reads frames through two indicators: the label given to the water and the actor held responsible. A national-interest frame is defined narrowly as coverage whose problem definition centres on the reporting nation’s stakes (citizens’ health, fisheries and trade, reputation or historical grievance) rather than on radiological evidence. Its direction is the actor it holds responsible, and it can be reassuring or alarmed. Domestication is the newsroom process of making foreign events meaningful by relating them to national concerns (Clausen, 2004).",
 
-        "Traditional media are professionally edited news organisations, including state media, whatever "
-        "their delivery channel. Emerging media are platforms on which users, influencers or covert accounts "
-        "circulate content ranked by algorithms or trending lists; platform governance means the ranking and "
-        "censorship rules that decide what surfaces. Media systems are compared on two dimensions drawn from "
-        "the Liberal, Democratic Corporatist and Polarized Pluralist models: political parallelism, the extent "
-        "to which media mirror party divisions, and the role of the state (Hallin & Mancini, 2004). China "
-        "falls outside these models, closer to the authoritarian and Soviet communist theories of the press "
-        "(Siebert et al., 1956). Japan’s *kisha* (press) clubs tie reporters to officials and homogenise news, "
-        "whereas South Korea’s media environment is pluralistic and polarised (Arrington, 2017).",
+        "Traditional media are professionally edited news organisations, including state media, whatever their delivery channel. Emerging media are platforms on which users, influencers or covert accounts circulate content ranked by algorithms or trending lists. Platform governance means the ranking and censorship rules that decide what surfaces. Media systems are compared on two dimensions drawn from the Liberal, Democratic Corporatist and Polarized Pluralist models: the role of the state and political parallelism, the extent to which media mirror party divisions (Hallin & Mancini, 2004). China falls outside these models, closer to the authoritarian and Soviet communist theories of the press (Siebert et al., 1956). Japan’s *kisha* (press) clubs tie reporters to officials and homogenise news, whereas South Korea’s media environment is pluralistic and polarised (Arrington, 2017).",
 
-        "The evidence falls into two layers. Studies of home-language newspapers and platforms show how each "
-        "country debated the issue domestically. English-language dailies such as the *Japan Times*, *China "
-        "Daily* and *Korea Herald* address foreign readers, so they are used only as evidence of each "
-        "country’s outward self-presentation (Gong et al., 2024).",
+        "The evidence falls into two layers. Studies of home-language newspapers and platforms show how each country debated the issue domestically. English-language dailies such as the *Japan Times*, *China Daily* and *Korea Herald* (Gong et al., 2024) address foreign readers, so their framing counts only as evidence of each country’s outward self-presentation; otherwise they are cited only for events.",
     ]),
     ("Japan: A Fixed Label, Divided Evaluations", [
-        "Japanese coverage was uniform in vocabulary but plural in evaluation. The label was policed: when "
-        "Agriculture Minister Tetsuro Nomura called the water *contaminated*, the slip was reported as echoing "
-        "Beijing and he apologised (“Fisheries Minister Under Fire,” 2023). Even the critical *Tokyo Shimbun* "
-        "used *shorisui* while reporting that the government was pressing ahead without keeping its 2015 "
-        "promise that no disposal would occur without fishers’ understanding (“Shorisui 24-nichi,” 2023). "
-        "Editorial judgements diverged along familiar lines. The conservative *Yomiuri* largely supported the "
-        "release as scientifically justified, while the *Mainichi* questioned whether government explanations "
-        "were adequate (C. Sun et al., 2024).",
+        "Japanese coverage was uniform in vocabulary but plural in evaluation. The label was policed: when Agriculture Minister Tetsuro Nomura called the water *contaminated*, echoing Beijing’s term, he drew cross-party criticism and apologised (“Fisheries Minister Under Fire,” 2023). Even the critical *Tokyo Shimbun* used *shorisui* while reporting that the government was pressing ahead without keeping its 2015 promise that no disposal would occur without fishers’ understanding (“Shorisui 24-Nichi,” 2023). Editorial judgements diverged along familiar lines. The conservative *Yomiuri* largely supported the release as scientifically justified, while the *Mainichi* questioned whether government explanations were adequate (C. Sun et al., 2024).",
 
-        "The actors with most at stake kept this division alive. The national fisheries federation declared "
-        "its opposition unchanged, accepting that the water might be scientifically safe but fearing "
-        "reputational damage (Reuters, 2023), and 151 fishers and residents sued to halt the discharge "
-        "(Associated Press, 2023). The government’s Scientific Safety frame thus coexisted with a livelihood "
-        "frame rooted in local experience (C. Sun et al., 2026). This pattern fits Japan’s media system. Press "
-        "clubs give member outlets privileged access to official sources (Arrington, 2017), and Japanese "
-        "watchdog journalism tends to doubt rather than openly criticise (Lee et al., 2024). Parallelism "
-        "therefore surfaced in editorial evaluation, while official access fixed the label. Abroad, the "
-        "English-language *Japan Times* presented a more unified image-protection discourse built on "
-        "scientific evidence and counter-blaming (Gong et al., 2024).",
+        "The actors with most at stake kept this division alive. The national fisheries federation, Zengyoren, declared its opposition unchanged, accepting that the water might be scientifically safe but fearing reputational damage (Reuters, 2023). Later, 151 fishers and residents, two-thirds of them from Fukushima, sued to halt the discharge (Associated Press, 2023). The government’s Scientific Safety frame thus sat in tension with lived local experience (C. Sun et al., 2026). This pattern fits Japan’s media system. Press clubs give member outlets privileged access to official sources (Arrington, 2017), and Japanese watchdog journalism tends to doubt rather than openly criticise (Lee et al., 2024). Parallelism therefore surfaced in editorial evaluation, while official access fixed the label. Abroad, the English-language *Japan Times* presented a more unified image-protection discourse built on scientific evidence and counter-blaming (Gong et al., 2024).",
 
-        "Emerging media widened the range of voices. Japanese-language tweets up to 2021 concentrated on how "
-        "the water would be treated and were negative, largely through complaints about the government (Lyu & "
-        "Lu, 2023). In a study of Japanese YouTube discourse on nuclear energy, the treated-water release drew "
-        "significantly negative sentiment (Y. Sun et al., 2025). Japanese X also carried foreign narratives, "
-        "including a community led by China’s consul general in Osaka (Digital Forensic Research Lab, 2024). "
-        "Online criticism thus targeted the government’s handling of the issue, extending the press division "
-        "rather than overturning the official label.",
+        "Emerging media widened the range of voices. Japanese-language tweets up to 2021 concentrated on the water’s long-term handling and were negative, partly through complaints about the government (Lyu & Lu, 2023). In a study of Japanese YouTube discourse on nuclear energy, the treated-water release drew significantly negative sentiment (Y. Sun et al., 2025). Chinese state media and inauthentic accounts also targeted Japan with exaggerated risk narratives (Digital Forensic Research Lab, 2024). Online criticism thus targeted the government’s handling, extending the press division into public commentary.",
     ]),
     ("China: One Frame, Amplified Online", [
-        "Chinese coverage was uniform in both vocabulary and evaluation. On the day of the release, the "
-        "Foreign Ministry condemned Japan’s unilateral discharge of *nuclear-contaminated water*, questioned "
-        "its data and accused Tokyo of passing the risk to the world (Ministry of Foreign Affairs of the "
-        "People’s Republic of China, 2023). Against Japan’s Scientific Safety frame, Chinese official and "
-        "mainstream discourse advanced an Environmental Justice frame stressing historical accountability and "
-        "ecological risk (C. Sun et al., 2026). Official outlets cast the release as a war and the Japanese "
-        "government and plant operator as liars (Li & Chen, 2024). Outward-facing coverage matched: the "
-        "English-language *China Daily* invoked US–Japan alliance politics and disputed the decision’s "
-        "scientific basis (Gong et al., 2024). Such homogeneity reflects the authoritarian logic in which the "
-        "press serves the ruling party (Siebert et al., 1956).",
+        "Chinese coverage was uniform in vocabulary and evaluation. On release day, the Foreign Ministry condemned Japan’s unilateral discharge of *nuclear-contaminated water*, questioned its data and accused Tokyo of passing the risk to the world (Ministry of Foreign Affairs of the People’s Republic of China, 2023). Against Japan’s Scientific Safety frame, Chinese official and mainstream discourse from 2021 to 2024 advanced an Environmental Justice frame stressing historical accountability and ecological risk (C. Sun et al., 2026). Official outlets, including the English-language *China Daily*, cast the release as a war and the Japanese government and plant operator as liars (Li & Chen, 2024), so this evidence is partly outward-facing. *China Daily* also invoked US–Japan alliance politics and disputed the decision’s scientific basis (Gong et al., 2024). Such homogeneity reflects the Soviet communist logic in which the press serves the party (Siebert et al., 1956).",
 
-        "On Weibo, emerging media amplified rather than diversified this frame. A graphic from Yuyuan Tantian, "
-        "an account believed to be linked to state broadcaster CCTV, claimed that Japan had allocated 70 "
-        "billion yen for public relations, and its hashtag drew 667 million views on the hot-search list "
-        "(Freedom House, 2023). An article criticising anti-Japanese netizens’ illogical arguments was quickly "
-        "censored (Freedom House, 2023). Across 56,526 Weibo posts, technical discussion gave way to "
-        "nationalist rhetoric led by grassroots users, in two strands: volatile anti-Japanese grievance and "
-        "steadier anti-Western scepticism (Qin & Lee, 2026). Consumers meanwhile stocked up on salt and "
-        "avoided seafood (Hall & Zhang, 2023). Grassroots leadership within state-set limits is best read as "
-        "participatory persuasion, in which netizens co-produce official messaging (Repnikova & Fang, 2018). "
-        "The contrast with Japan is instructive: both states fixed a label, but only Beijing also fixed the "
-        "evaluation, so online users intensified the official frame rather than contesting it.",
+        "On Weibo, platform ranking amplified rather than diversified this frame. A graphic from Yuyuan Tantian, an account believed to be linked to state broadcaster CCTV, claimed that Japan had allocated 70 billion yen for public relations. Its hashtag drew 667 million views on the hot-search list (Freedom House, 2023). An article criticising anti-Japanese netizens’ illogical arguments was quickly censored (Freedom House, 2023). Across 56,526 Weibo posts, technical discussion gave way to nationalist rhetoric led by grassroots users, in two strands: volatile anti-Japanese grievance and steadier anti-Western scepticism (Qin & Lee, 2026). Grassroots leadership within state-set limits is best read as participatory persuasion, in which netizens co-produce official messaging (Repnikova & Fang, 2018). The contrast with Japan is instructive: both states fixed a label, but only Beijing also fixed the evaluation, so online users intensified the official frame rather than contesting it.",
     ]),
     ("South Korea: Partisan Frames Around a Shared Anxiety", [
-        "South Korean coverage changed as the issue became partisan. In 2021 the progressive Moon Jae-in "
-        "government explored taking Japan to an international tribunal (Al Jazeera, 2021), and the "
-        "outward-facing *Korea Herald* built a blaming discourse around Japan’s irresponsibility and history "
-        "(Gong et al., 2024). The conservative Yoon Suk Yeol government said it respected the IAEA’s findings "
-        "without supporting or opposing the release (“Yoon Faces Mounting Protests,” 2023). Headlines in four "
-        "major dailies show both camps initially using *concern* (Kim, 2026). After Yoon’s inauguration, "
-        "conservative papers switched to *disinformation*, pairing it with *mad cow disease* and *fake news*, "
-        "while progressive papers treated that label as a ruling-party weapon (Kim, 2026). Progressive outlets "
-        "stressed environmental and health risks and government accountability, conservative outlets "
-        "diplomacy and governance. Polarisation peaked before the release and then eased, although strongly "
-        "partisan outlets held their positions (Chang, 2025).",
+        "South Korean coverage changed as the issue became partisan. In 2021 the progressive Moon Jae-in government explored taking Japan to an international tribunal (Al Jazeera, 2021). Abroad, the English-language *Korea Herald* built a blaming discourse around Japan’s irresponsibility and history (Gong et al., 2024). The conservative Yoon Suk Yeol government later said it respected the IAEA’s findings without supporting or opposing the release (“Yoon Faces Mounting Protests,” 2023). Headlines in four major dailies from 2019 to 2024 show both camps initially using *concern* (Kim, 2026). After Yoon’s inauguration, conservative papers switched to *disinformation*, pairing it with *mad cow disease* and *fake news*, while progressive papers treated that label as a ruling-party weapon (Kim, 2026). Progressive outlets stressed environmental and health risks and government accountability, conservative outlets diplomacy and governance (Chang, 2025). Polarisation peaked before the release and then eased, although strongly partisan outlets held their positions.",
 
-        "Politicians performed the rival frames. Opposition leader Lee Jae-myung, on hunger strike, warned "
-        "that the president risked complicity in what he called Japanese nuclear terrorism, while ruling-party "
-        "lawmakers dined on seafood to show it was safe (“Fukushima Release Has South Korean Politicians,” "
-        "2023). Anxiety was nonetheless widespread: 84% of South Koreans disapproved of the release in a joint "
-        "Korean–Japanese newspaper poll, and sea-salt prices stood about 30% above a year earlier (Kuhn, "
-        "2023). This press pattern resembles the Polarized Pluralist model, in which outlets act as partisan "
-        "interpreters (Hallin & Mancini, 2004), and matches the more openly critical watchdog style found in "
-        "South Korea (Lee et al., 2024).",
+        "Politicians performed the rival frames. Opposition leader Lee Jae-myung, on hunger strike, warned that the president risked complicity in what he called Japanese nuclear terrorism, while ruling-party lawmakers dined on seafood to show it was safe (“Fukushima Release Has South Korean Politicians,” 2023). Anxiety was nonetheless widespread: 84% of South Koreans disapproved of the release in a joint Korean–Japanese newspaper poll, and sea-salt prices stood about 30% above a year earlier (Kuhn, 2023). This press pattern resembles the Polarized Pluralist model, in which outlets act as partisan interpreters (Hallin & Mancini, 2004), and matches the more openly critical watchdog style found in South Korea (Lee et al., 2024).",
 
-        "Platform evidence is thinner. The government itself used YouTube: its video on the “truth” of the "
-        "water drew more than 16 million views in under two months, a figure critics suspected had been "
-        "inflated (“Questions Mount,” 2023). Korean-language tweets, like Japanese ones, were negative about "
-        "the discharge (Lyu & Lu, 2023), and a China-linked network posted hundreds of Korean-language "
-        "messages amplifying the protests (Microsoft Threat Analysis Center, 2024). Naver comment sections and "
-        "partisan YouTube channels, prominent arenas of Korean online debate, have not been studied on this "
-        "issue in the sources reviewed, so Korean platform dynamics remain an open question.",
+        "Platform evidence is thinner. The government itself used YouTube: its video on the “truth” of the water drew more than 16 million views in under two months, a figure critics suspected had been inflated (“Questions Mount,” 2023). Korean-language tweets, like Japanese ones, were negative about the discharge (Lyu & Lu, 2023), and a China-linked network posted hundreds of Korean-language messages amplifying the protests (Microsoft Threat Analysis Center, 2024). Naver comment sections and partisan YouTube channels, prominent arenas of Korean online debate, have not been studied on this issue in the sources reviewed, leaving Korean platform dynamics open.",
     ]),
     ("Explaining Similarities and Disparities", [
-        "Across the home-language evidence, three similarities stand out. Each media sphere judged the "
-        "release mainly by national consequences: fishers’ livelihoods and reputational damage in Japan, "
-        "historical accountability in China, and public health against diplomacy in South Korea (Chang, 2025; "
-        "C. Sun et al., 2026). Labels carried these judgements, as the policing of *contaminated* in Japan and "
-        "the renaming contest in South Korea show. Public anxiety also surfaced in all three countries, "
-        "through negative online sentiment and salt-buying (Hall & Zhang, 2023; Kuhn, 2023; Lyu & Lu, 2023).",
+        "Three similarities stand out. Alongside scientific claims, each media sphere applied a national-interest frame: fishers’ livelihoods and reputational damage in Japan, historical accountability in China, and public health against diplomacy in South Korea (Chang, 2025; Reuters, 2023; C. Sun et al., 2026). Labels carried these frames, as the policing of *contaminated* in Japan and the renaming contest in South Korea show. Public anxiety also surfaced in all three countries, through negative online sentiment and salt-buying (Hall & Zhang, 2023; Kuhn, 2023; Lyu & Lu, 2023).",
 
-        "Two mechanisms explain this convergence. Newsrooms domesticate foreign events by linking them to "
-        "national concerns (Clausen, 2004), so a release governed by international standards became a question "
-        "of national health, trade and reputation. Nuclear contamination is also a risk whose social "
-        "amplification depends on how uncertainty and transparency are handled (Gong et al., 2024), which is "
-        "why IAEA reassurance alone could not settle it.",
+        "Two mechanisms explain this convergence. Newsrooms domesticate foreign events by linking them to national concerns (Clausen, 2004), and domestic voices anchored the story: Japanese fishers, Chinese netizens and Korean partisans. Risk is also socially amplified, as media and institutions can magnify concern beyond technical estimates when uncertainty and transparency are poorly handled (Gong et al., 2024), so IAEA reassurance alone could not settle it.",
 
-        "The direction of nationalisation, however, differed. State–media relations were decisive in China, "
-        "where the party-state fixed both label and evaluation, and in Japan, where press-club access fixed "
-        "the label but left editorial judgement open (Arrington, 2017; C. Sun et al., 2024). Political "
-        "parallelism explains South Korea, where the conservative press echoed the new government and "
-        "progressive papers contested it (Kim, 2026). Geopolitics shaped the stakes. China’s frame drew on "
-        "US–Japan alliance politics and historical accountability (Gong et al., 2024; C. Sun et al., 2026), "
-        "whereas in Seoul the opposition attacked the government’s alignment with Tokyo (“Fukushima Release "
-        "Has South Korean Politicians,” 2023). Platform governance, finally, channelled Weibo nationalism "
-        "outward while dissent was censored (Freedom House, 2023), whereas Japanese and Korean users could "
-        "turn their criticism on their own governments (Lyu & Lu, 2023).",
+        "The direction of the frame, however, differed: Beijing blamed Tokyo, Japanese critics blamed their own government, and Korean parties blamed each other. State–media relations were decisive in China, where the party-state fixed both label and evaluation, and in Japan, where press-club access fixed the label but left editorial judgement open (Arrington, 2017; C. Sun et al., 2024). Political parallelism explains South Korea, where the conservative press echoed the new government and progressive papers contested it (Kim, 2026). Geopolitics shaped the stakes. China’s frame drew on anti-Western scepticism and historical accountability (Qin & Lee, 2026; C. Sun et al., 2026), whereas in Seoul the opposition attacked the government’s alignment with Tokyo (“Fukushima Release Has South Korean Politicians,” 2023). Platform governance, finally, channelled Weibo nationalism outward while dissent was censored (Freedom House, 2023), whereas Japanese users could criticise their own government (Lyu & Lu, 2023; Y. Sun et al., 2025).",
 
-        "These frames proved durable. When China agreed in September 2024 to resume imports gradually after "
-        "additional monitoring, Beijing restated its opposition to the discharge and presented the deal as "
-        "binding Japan to its international obligations, while Tokyo emphasised its readiness for extra "
-        "monitoring (Al Jazeera, 2024). The findings also complicate a simple contrast between Japanese "
-        "science and Chinese propaganda. Japan’s frame served national reputation abroad (Gong et al., 2024), "
-        "and Chinese nationalism was led by grassroots users rather than simply imposed (Qin & Lee, 2026). "
-        "Because the three models were built on Western democracies (Hallin & Mancini, 2004), they work "
-        "better in East Asia as dimensions than as fixed categories.",
+        "Official frames proved durable. In September 2024 China agreed to resume imports gradually after additional monitoring (Al Jazeera, 2024). Beijing nonetheless restated its opposition and presented the deal as binding Japan to its international obligations, while Tokyo stressed its readiness for extra monitoring (Al Jazeera, 2024).",
+
+        "The findings also complicate a simple contrast between Japanese science and Chinese propaganda. Japan’s frame served national reputation abroad (Gong et al., 2024), and Chinese nationalism was led by grassroots users rather than simply imposed (Qin & Lee, 2026). Because the three models were built on Western democracies (Hallin & Mancini, 2004), they work better in East Asia as dimensions than as fixed categories.",
     ]),
     ("Conclusion", [
-        "All three media spheres nationalised the Fukushima discharge, but who controlled that nationalisation "
-        "differed. In Japan, official access fixed the *treated water* label while editorial evaluation and "
-        "online commentary stayed divided, especially over fishers’ livelihoods. In China, the party-state "
-        "fixed both label and evaluation, and Weibo users amplified them into nationalism. In South Korea, "
-        "political parallelism divided the same facts along party lines. Domestication and risk amplification "
-        "explain the shared national framing; state–media relations, parallelism, geopolitics and platform "
-        "governance explain the differences. Emerging media amplified or contested these patterns without "
-        "displacing professional and state media, although the uneven platform evidence, especially for South "
-        "Korea, means this conclusion needs further testing.",
+        "All three media spheres applied a national-interest frame to the Fukushima discharge, but its direction and control differed. In Japan, official access fixed the *treated water* label, while fishers’ opposition kept editorial evaluation divided and online commentary turned critical of the government. In China, the party-state fixed both label and evaluation, and Weibo users amplified them into nationalism. In South Korea, political parallelism divided the same facts along party lines. Domestication and risk amplification explain the shared framing; state–media relations, parallelism, geopolitics and platform governance explain the differences. Emerging media amplified or contested these patterns without displacing professional and state media, although the uneven platform evidence, especially for South Korea, means this conclusion needs further testing.",
     ]),
 ]
 
@@ -265,7 +137,7 @@ REFERENCES = [
 
     "Lyu, S., & Lu, Z. (2023). Exploring temporal and multilingual dynamics of post-disaster social media "
     "discourse: A case of Fukushima Daiichi nuclear accident. *Proceedings of the ACM on Human-Computer "
-    "Interaction, 7*(CSCW1). https://doi.org/10.1145/3579484",
+    "Interaction, 7*(CSCW1), 1–24. https://doi.org/10.1145/3579484",
 
     "Microsoft Threat Analysis Center. (2024, April). *Same targets, new playbooks: East Asia threat actors "
     "employ unique methods*. Microsoft. https://www.microsoft.com/en-us/security/security-insider/"
@@ -296,7 +168,7 @@ REFERENCES = [
 
     "Shorisui 24-nichi ni mo kaiyō hōshutsu e: Seifu, gyogyōsha to no yakusoku hatasanu mama [Treated "
     "water to be released into the sea as early as the 24th, with the government’s promise to fishers "
-    "unfulfilled]. (2023, August 22). *Tōkyō Shinbun*. https://www.tokyo-np.co.jp/article/271687",
+    "unfulfilled]. (2023, August 22). *Tokyo Shimbun*. https://www.tokyo-np.co.jp/article/271687",
 
     "Siebert, F. S., Peterson, T., & Schramm, W. (1956). *Four theories of the press: The authoritarian, "
     "libertarian, social responsibility and Soviet communist concepts of what the press should be and do*. "
